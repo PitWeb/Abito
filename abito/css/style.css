@@ -1,0 +1,112 @@
+.body {
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    /* размер шрифта */
+    color: #0A143A;
+    /* цвет текста */
+}
+.header {
+    max-width: 1446px; 
+    /* максимальная ширина */
+    margin: auto;
+    /* автоматическое выравнивание по середине */
+    padding-top: 30px;
+    /* отступ сверху для шапки сайта 30рх */
+}
+
+.navbar {
+    display: flex; 
+    /* делаем гибкий блок */
+    align-items: center;
+    /* выравниваем по вертикали по центру */
+    justify-content: space-around;
+    /* разбросать элементы по краям */
+    margin-bottom: 24px;
+}
+
+.navbar-menu {
+    margin-right: auto;
+    /* автоматический отступ справа */
+}
+
+.menu {
+    list-style: none;
+    /* отключаем точки в списке */
+    margin: 0;
+    /* обнуляем отступы */
+    padding-left: 22px;
+    /* внутренний отступ слеева */
+    padding-right: 22px;
+    /* внутренний отступ справа */
+    display: flex;
+}
+/* для всех пунктов меню кроме последнего */
+.menu-item:not(:last-child) {
+    margin-right: 14px;
+    /* применяем отступ справа */
+}
+
+.menu-link {
+    text-decoration: none;
+    /* отключаем декорирование цветом для ссылок */
+    color: inherit;
+    /* ссылки приобретают цвет родителя */
+}
+
+.button {
+    text-decoration: none;
+    /* отключаем декорирование цветом у кнопок */
+    display: inline-block;
+    padding: 10px 15px; 
+    /* внутренние отступы сверху и снизу 10рх а слева и справа 15рх */
+    cursor: pointer;
+    /* при наведении на кнопку мышь превращается в указатель */
+}
+
+.button-link {
+    color: inherit;
+}
+
+.button-primary {
+    background: #256EEB;
+    /* фон кнопки */
+    border-radius: 5px;
+    /* скругление углов */
+    color:white;
+
+}
+
+.search-panel {
+    height: 50px;
+    background: #256EEB;
+    border-radius: 5px;
+    display: flex;
+    padding: 3px;
+}
+
+.search-input {
+    flex-grow: 1;
+    /* растягивается на всё свободное место */
+    background:#ffffff;
+    border-radius: 5px;
+    border: none;
+    /* отключаем обводку */
+    padding-left: 22px;
+    padding-right: 22px;
+}
+
+.search-button {
+    background: #256EEB;
+    border: none;
+    color: White;
+    padding-right: 17px;
+    padding-left: 20px;
+    display: flex;
+    align-items: center;
+
+}
+
+.search-button-text {
+    margin-left: 5px;   
+}
+
